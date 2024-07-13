@@ -5,14 +5,13 @@ import Home from './components/Home';
 import About from './components/About';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
-import './style/App.css';
 
 const App = () => {
   return (
     <Router>
-      <div className="app">
+      <div className="flex h-screen">
         <Sidebar />
-        <div className="content">
+        <div className="flex-1 p-6">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />

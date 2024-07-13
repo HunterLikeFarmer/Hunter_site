@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import './style/index.css';
+import './styles/tailwind.css'; // Import Tailwind CSS
+import './styles/index.css'; // If you have other global styles
 
 ReactDOM.render(
   <React.StrictMode>
