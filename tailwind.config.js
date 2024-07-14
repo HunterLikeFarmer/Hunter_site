@@ -7,12 +7,31 @@ module.exports = {
     extend: {
       colors: {
         'old-book-page': '#F5DEB3', 
-        'new-purple': '#A9A9A9',
+        'dark-blue': '#1E293B',
+        'gray-thumb': '#6B7280',
+        'gray-thumb-hover': '#4B5563',
       },
-      transitionProperty: {
-        'transform-color': 'transform, color', 
+      borderRadius: {
+        'scrollbar': '8px',
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar'),
+    function ({ addComponents }) {
+      addComponents({
+        '.scrollbar-track': {
+          'background-color': '#1E293B',
+          'border-radius': '8px',
+        },
+        '.scrollbar-thumb': {
+          'background-color': '#6B7280',
+          'border-radius': '8px',
+        },
+        '.scrollbar-thumb:hover': {
+          'background-color': '#4B5563',
+        },
+      });
+    },
+  ],
 }

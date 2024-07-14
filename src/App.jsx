@@ -30,6 +30,8 @@ const App = () => {
       entries.forEach((entry) => {
         const link = document.querySelector(`a[href="#${entry.target.id}"]`);
         const listItem = link ? link.parentElement : null;
+        console.log(`Section ${entry.target.id} is intersecting: ${entry.isIntersecting}`); // Debugging
+        console.log('ListItem selected:', listItem); // Debugging
 
         if (entry.isIntersecting) {
           if (listItem) listItem.style.transform = 'scale(1.4)';
@@ -65,8 +67,8 @@ const App = () => {
       <Sidebar />
       <Scrollbar
         style={{ width: '100%', height: '100vh' }}
-        trackYProps={{ style: { backgroundColor: '#1E293B' } }} 
-        thumbYProps={{ style: { backgroundColor: '#6B7280', borderRadius: '8px' } }} 
+        trackYProps={{ className: 'scrollbar-track' }}
+        thumbYProps={{ className: 'scrollbar-thumb' }}
       >
       <div className="bg-old-book-page flex-1 overflow-y-scroll">
         <section id="home" ref={homeRef} className="h-screen">
