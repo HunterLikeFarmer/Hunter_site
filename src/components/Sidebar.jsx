@@ -1,5 +1,5 @@
-import React from 'react';
-import { IconInstagram, IconLinkedin } from './icons';
+import React from "react";
+import { IconInstagram, IconLinkedin } from "./icons";
 
 const Sidebar = () => {
   return (
@@ -7,16 +7,24 @@ const Sidebar = () => {
       <nav>
         <ul className="space-y-6">
           <li className="transform transition duration-300 hover:scale-110">
-            <a href="#home" className="text-white hover:text-gray-400">Home</a>
+            <a href="#home" className="text-white hover:text-gray-400">
+              Home
+            </a>
           </li>
           <li className="transform transition duration-300 hover:scale-110">
-            <a href="#about" className="text-white hover:text-gray-400">About</a>
+            <a href="#about" className="text-white hover:text-gray-400">
+              About
+            </a>
           </li>
           <li className="transform transition duration-300 hover:scale-110">
-            <a href="#projects" className="text-white hover:text-gray-400">Projects</a>
+            <a href="#projects" className="text-white hover:text-gray-400">
+              Projects
+            </a>
           </li>
           <li className="transform transition duration-300 hover:scale-110">
-            <a href="#contact" className="text-white hover:text-gray-400">Contact</a>
+            <a href="#contact" className="text-white hover:text-gray-400">
+              Contact
+            </a>
           </li>
         </ul>
       </nav>
