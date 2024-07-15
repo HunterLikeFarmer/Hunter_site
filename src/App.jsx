@@ -5,6 +5,7 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import { Scrollbar } from "react-scrollbars-custom";
+import CustomScrollbar from "./components/Scrollbar";
 
 const App = () => {
   const homeRef = useRef(null);
@@ -65,13 +66,9 @@ const App = () => {
   }, []);
 
   return (
-    <div className="flex h-screen">
-      <Sidebar />
-      <Scrollbar
-        style={{ width: "100%", height: "100vh" }}
-        trackYProps={{ className: "scrollbar-track" }}
-        thumbYProps={{ className: "scrollbar-thumb" }}
-      >
+    
+      <div className="flex h-screen">
+        <Sidebar />
         <div className="bg-old-book-page flex-1 overflow-y-scroll">
           <section id="home" ref={homeRef} className="h-screen">
             <Home />
@@ -86,8 +83,8 @@ const App = () => {
             <Contact />
           </section>
         </div>
-      </Scrollbar>
-    </div>
+      </div>
+  
   );
 };
 

@@ -24,7 +24,7 @@ const Home = () => {
         style={{ backgroundImage: `url(${camus})` }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-          <h1 className="text-5xl text-white font-bold">
+          <h1 className="text-5xl text-white font-bold italic">
             Welcome to My Homepage
           </h1>
         </div>
@@ -35,11 +35,11 @@ const Home = () => {
 
       <section className="pt-10 pb-10 bg-old-book-page">
         <div className="container mx-auto flex flex-col items-center justify-center">
-          <h2 className="text-4xl font-bold mb-4">My name is Hunter</h2>
-          <p className="text-lg">
-            I'm an undergraduate at the University of Illinois Urbana-Champaign.
-            I currently major in computer science and minor in comparative
-            literature.
+          <h2 className="text-4xl font-bold mb-4 hover:scale-110 duration-700">Hi! My name is Hunter</h2>
+          <p className="pt-5 text-lg hover:scale-110 duration-700">
+            I'm an undergraduate at <strong><i>University of Illinois Urbana-Champaign</i></strong>.
+            I currently major in <strong><i>computer science</i></strong> and minor in <strong><i>comparative
+            literature</i></strong>.
           </p>
         </div>
       </section>

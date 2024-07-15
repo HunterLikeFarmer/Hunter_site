@@ -7,6 +7,7 @@ module.exports = {
         "dark-blue": "#1E293B",
         "gray-thumb": "#6B7280",
         "gray-thumb-hover": "#4B5563",
+        
       },
       borderRadius: {
         scrollbar: "8px",
@@ -30,7 +31,7 @@ module.exports = {
     function ({ addComponents }) {
       addComponents({
         ".scrollbar-track": {
-          "background-color": "#1E293B",
+          "background-color": "#F5DEB3",
           "border-radius": "8px",
         },
         ".scrollbar-thumb": {
