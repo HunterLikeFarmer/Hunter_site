@@ -12,8 +12,8 @@ const Sidebar = () => {
             </a>
           </li>
           <li className="transform transition duration-300 hover:scale-110">
-            <a href="#about" className="text-white hover:text-gray-400">
-              About
+            <a href="#books" className="text-white hover:text-gray-400">
+              Books
             </a>
           </li>
           <li className="transform transition duration-300 hover:scale-110">
