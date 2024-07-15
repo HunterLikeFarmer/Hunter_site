@@ -1,22 +1,20 @@
 import React, { useEffect, useRef } from "react";
 import Sidebar from "./components/Sidebar";
 import Home from "./components/Home";
-import About from "./components/About";
+import Books from "./components/Books";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
-import { Scrollbar } from "react-scrollbars-custom";
-import CustomScrollbar from "./components/Scrollbar";
 
 const App = () => {
   const homeRef = useRef(null);
-  const aboutRef = useRef(null);
+  const booksRef = useRef(null);
   const projectsRef = useRef(null);
   const contactRef = useRef(null);
 
   useEffect(() => {
     const sections = [
       { id: "home", ref: homeRef },
-      { id: "about", ref: aboutRef },
+      { id: "books", ref: booksRef },
       { id: "projects", ref: projectsRef },
       { id: "contact", ref: contactRef },
     ];
@@ -33,8 +31,8 @@ const App = () => {
         const listItem = link ? link.parentElement : null;
         console.log(
           `Section ${entry.target.id} is intersecting: ${entry.isIntersecting}`
-        ); // Debugging
-        console.log("ListItem selected:", listItem); // Debugging
+        );
+        console.log("ListItem selected:", listItem);
 
         if (entry.isIntersecting) {
           if (listItem) listItem.style.transform = "scale(1.4)";
@@ -66,25 +64,23 @@ const App = () => {
   }, []);
 
   return (
-    
-      <div className="flex h-screen">
-        <Sidebar />
-        <div className="bg-old-book-page flex-1 overflow-y-scroll">
-          <section id="home" ref={homeRef} className="h-screen">
-            <Home />
-          </section>
-          <section id="about" ref={aboutRef} className="h-screen">
-            <About />
-          </section>
-          <section id="projects" ref={projectsRef} className="h-screen">
-            <Projects />
-          </section>
-          <section id="contact" ref={contactRef} className="h-screen">
-            <Contact />
-          </section>
-        </div>
+    <div className="flex h-screen overflow-hidden">
+      <Sidebar />
+      <div className="bg-old-book-page flex-1 overflow-y-auto">
+        <section id="home" ref={homeRef} className="">
+          <Home />
+        </section>
+        <section id="books" ref={booksRef} className="p-4">
+          <Books />
+        </section>
+        <section id="projects" ref={projectsRef} className="p-4">
+          <Projects />
+        </section>
+        <section id="contact" ref={contactRef} className="h-screen p-4">
+          <Contact />
+        </section>
       </div>
-  
+    </div>
   );
 };
 

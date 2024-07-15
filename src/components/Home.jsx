@@ -1,10 +1,18 @@
 import React, { useEffect, useRef } from "react";
-import IB2001 from "../assets/IB2001.jpg";
-import mom from "../assets/mom.jpg";
-import dad from "../assets/dad.jpg";
-import la from "../assets/la.jpg";
-import camus from "../assets/camus.jpg"
-import site_sound from "../assets/site_sound.jpg";
+import IB2001 from "../assets/rolling/IB2001.jpg";
+import mom from "../assets/rolling/mom.jpg";
+import dad from "../assets/rolling/dad.jpg";
+import la from "../assets/rolling/la.jpg";
+import camus from "../assets/rolling/camus.jpg"
+import site_sound from "../assets/rolling/site_sound.jpg";
+import austin from "../assets/rolling/austin.jpg"
+import houston from "../assets/rolling/houston.jpg"
+import heralds1 from "../assets/rolling/heralds1.jpg"
+import heralds2 from "../assets/rolling/heralds2.jpg"
+import coffee from "../assets/rolling/me_with_coffee.jpg"
+import ny from "../assets/rolling/New_York.jpg"
+import nsda from "../assets/rolling/nsda.jpg"
+
 
 const Home = () => {
   const logosRef = useRef(null);
@@ -33,9 +41,9 @@ const Home = () => {
         </div>
       </div>
 
-      <section className="pt-10 pb-10 bg-old-book-page">
+      <section className="px-10 pt-10 pb-10 bg-old-book-page">
         <div className="container mx-auto flex flex-col items-center justify-center">
-          <h2 className="text-4xl font-bold mb-4 hover:scale-110 duration-700">Hi! My name is Hunter</h2>
+          <h2 className="text-4xl font-bold mb-4 hover:scale-110 duration-700">Hi! My name is Hunter Jiang</h2>
           <p className="pt-5 text-lg hover:scale-110 duration-700">
             I'm an undergraduate at <strong><i>University of Illinois Urbana-Champaign</i></strong>.
             I currently major in <strong><i>computer science</i></strong> and minor in <strong><i>comparative
@@ -91,6 +99,55 @@ const Home = () => {
                 <img
                   src={site_sound}
                   alt="Site Sound"
+                  className="w-full h-full object-cover rounded-full"
+                />
+              </li>
+              <li className="w-32 h-32 flex items-center justify-center">
+                <img
+                  src={austin}
+                  alt="austin"
+                  className="w-full h-full object-cover rounded-full"
+                />
+              </li>
+              <li className="w-32 h-32 flex items-center justify-center">
+                <img
+                  src={houston}
+                  alt="houston"
+                  className="w-full h-full object-cover rounded-full"
+                />
+              </li>
+              <li className="w-32 h-32 flex items-center justify-center">
+                <img
+                  src={heralds1}
+                  alt="heralds1"
+                  className="w-full h-full object-cover rounded-full"
+                />
+              </li>
+              <li className="w-32 h-32 flex items-center justify-center">
+                <img
+                  src={heralds2}
+                  alt="heralds2"
+                  className="w-full h-full object-cover rounded-full"
+                />
+              </li>
+              <li className="w-32 h-32 flex items-center justify-center">
+                <img
+                  src={ny}
+                  alt="ny"
+                  className="w-full h-full object-cover rounded-full"
+                />
+              </li>
+              <li className="w-32 h-32 flex items-center justify-center">
+                <img
+                  src={nsda}
+                  alt="nsda"
+                  className="w-full h-full object-cover rounded-full"
+                />
+              </li>
+              <li className="w-32 h-32 flex items-center justify-center">
+                <img
+                  src={coffee}
+                  alt="coffee"
                   className="w-full h-full object-cover rounded-full"
                 />
               </li>
