@@ -2,4 +2,24 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
   }
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #8892b0 #F5DEB3;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F5DEB3;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #8892b0;
+  border: 3px solid #F5DEB3;
+  border-radius: 10px;
+}
+
   
