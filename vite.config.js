@@ -5,6 +5,7 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   server: {
-    port: 4000, // specify the port here
+    port: 4000, 
   },
+  base: "/Hunter_site/"
 });
