@@ -12,7 +12,7 @@ const Books = () => {
     <div className="min-h-screen container mx-auto p-10 font-garamond">
       <section className="px-10 pt-10 pb-10 bg-old-book-page">
         <div className="container mx-auto flex flex-col items-center justify-center">
-          <h2 className="text-2xl font-bold mb-4 hover:scale-110 duration-700">
+          <h2 className="text-2xl font-bold mb-4 hover:scale-110 duration-700 playwrite-cu-main">
             Books & Films
           </h2>
           <hr className="w-full border-t border-gray-400 mb-6" />
