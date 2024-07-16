@@ -15,18 +15,19 @@ const Books = () => {
           <h2 className="text-2xl font-bold mb-4 hover:scale-110 duration-700">
             Books & Films
           </h2>
+          <hr className="w-full border-t border-gray-400 mb-6" />
           <p className="pt-5 text-lg hover:scale-110 duration-700">
             Literature and films are the all-time love of my life. Feel free to
-            let me know some books and films you like!.
+            let me know what books and films you like!
           </p>
         </div>
       </section>
 
       <div className="flex space-x-4">
         <div className="w-1/2 bg-old-book-page p-6 rounded-lg">
-          <h2 className="text-3xl font-semibold mb-6 hover:scale-110 duration-700">Reading</h2>
+          <h2 className="text-3xl font-semibold mb-6 hover:scale-110 duration-700">Currently Reading</h2>
           <ul className="space-y-10">
-            <li className="bg-white p-6 rounded-lg shadow-lg">
+            <li className="notebook-paper bg-white p-6 rounded-lg shadow-lg">
               <BookCard
                 imageSrc={lolita}
                 author="Nabokov"
@@ -34,7 +35,7 @@ const Books = () => {
                 link = "https://en.wikipedia.org/wiki/Lolita"
               />
             </li>
-            <li className="bg-white p-6 rounded-lg shadow-lg">
+            <li className="notebook-paper bg-white p-6 rounded-lg shadow-lg">
             <BookCard
                 imageSrc={existentialism}
                 author="Kaufmann"
@@ -42,7 +43,7 @@ const Books = () => {
                 link = "https://www.amazon.com/Existentialism-Dostoevsky-Sartre-Revised-Expanded/dp/0452009308"
               />
             </li>
-            <li className="bg-white p-6 rounded-lg shadow-lg">
+            <li className="notebook-paper bg-white p-6 rounded-lg shadow-lg">
               <BookCard
                 imageSrc={lover}
                 author="Marguerite Duras"
@@ -56,7 +57,7 @@ const Books = () => {
         <div className="w-1/2 bg-old-book-page p-6 rounded-lg">
           <h2 className="text-3xl font-semibold mb-6 hover:scale-110 duration-700">Next to watch</h2>
           <ul className="space-y-10">
-            <li className="bg-white p-6 rounded-lg shadow-lg">
+            <li className="notebook-paper bg-white p-6 rounded-lg shadow-lg">
               <BookCard
                 imageSrc= {one}
                 author="Edward Yang"
@@ -64,7 +65,7 @@ const Books = () => {
                 link = "https://www.imdb.com/title/tt0109685/"
               />
             </li>
-            <li className="bg-white p-6 rounded-lg shadow-lg">
+            <li className="notebook-paper bg-white p-6 rounded-lg shadow-lg">
               <BookCard
                 imageSrc={two}
                 author="Greta Gerwig/Noah Baumbach"
@@ -72,7 +73,7 @@ const Books = () => {
                 link = "https://www.imdb.com/title/tt2347569/"
               />
             </li>
-            <li className="bg-white p-6 rounded-lg shadow-lg">
+            <li className="notebook-paper bg-white p-6 rounded-lg shadow-lg">
               <BookCard
                 imageSrc={three}
                 author="Andrey Zvyagintsev"

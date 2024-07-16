@@ -7,7 +7,8 @@ module.exports = {
         "dark-blue": "#1E293B",
         "gray-thumb": "#6B7280",
         "gray-thumb-hover": "#4B5563",
-        
+        'dark-blue': '#1a202c',
+        'hover-blue': '#2d3748',
       },
       borderRadius: {
         scrollbar: "8px",

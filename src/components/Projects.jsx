@@ -1,78 +1,68 @@
-import React from 'react';
-import BookCard from './Bookcard';
+import React from "react";
+import ProjectCard from "./ProjectCard";
 
 const Projects = () => {
+  const projectList = [
+    {
+      title: "ClassTranscribe",
+      description:
+        "Participated in the development of an educational platform proposed by professor Lawrence Angrave in University of Illinois Urbana Champaign. Worked on the user interface for transcript PDF download feature. Integrated a computer vision model into the platform for flash detection",
+      tags: ["JavaScript", "TypeScript", "React", "C#", "Python", "RabbitMQ"],
+      link: "https://classtranscribe.illinois.edu/"
+    },
+    {
+      title: "MusicBox Interactive",
+      description:
+        "Worked as a full-stack developer intern in National Center for Atmospheric Research, mentored by Dr. Nicole Riemer. Participated in the development of MusicBox Interactive, which is an interactive software that leverages MusicBox and PartMC for atmospheric calculation and modelling",
+      tags: [
+        "Django",
+        "RabbitMQ",
+        "Docker",
+        "JavaScript",
+        "React",
+        "SQLite",
+      ],
+      link: "https://musicbox.acom.ucar.edu/",
+    },
+    {
+      title: "I-Code",
+      description:
+        "Participated in the development of a mobile app proposed by Jacky Zhang. I-Code is a mobile app that allows user to practice coding and learn software development anytime, anywhere. It is designed to be Duolingo in the world of programmers.",
+      tags: [
+        "Node.js",
+        "MongoDB",
+        "JWT",
+        "Flutter",
+      ],
+    },
+  ];
+
   return (
     <div className="min-h-screen container mx-auto p-10 font-garamond">
-      {/* Top section with title and paragraph */}
       <section className="px-10 pt-10 pb-10 bg-old-book-page">
         <div className="container mx-auto flex flex-col items-center justify-center">
           <h2 className="text-2xl font-bold mb-4 hover:scale-110 duration-700">
-            Books & Films
+            Projects & Experience Highlights
           </h2>
           <p className="pt-5 text-lg hover:scale-110 duration-700">
-            Literature and films are the all-time love of my life. Feel free to
-            let me know some books and films you like!.
+            Here are the fun projects I've worked on. Great thanks to all the
+            amazing people I've had the pleasure of working with. It is they who
+            made these projects possible.
           </p>
         </div>
       </section>
 
-      {/* Bottom section with two parallel containers */}
-      <div className="flex space-x-4">
-        {/* Left container */}
-        <div className="w-1/2 bg-old-book-page p-4 rounded-lg">
-          <h2 className="text-2xl font-semibold mb-4">Reading</h2>
-          <ul className="space-y-2">
-            <li className="bg-white p-2 rounded shadow">
-              <BookCard
-                imageSrc="https://via.placeholder.com/150"
-                author="Author Name"
-                bookName="Book Name"
-              />
-            </li>
-            <li className="bg-white p-2 rounded shadow">
-              <BookCard
-                imageSrc="https://via.placeholder.com/150"
-                author="Author Name"
-                bookName="Book Name"
-              />
-            </li>
-            <li className="bg-white p-2 rounded shadow">
-              <BookCard
-                imageSrc="https://via.placeholder.com/150"
-                author="Author Name"
-                bookName="Book Name"
-              />
-            </li>
-          </ul>
-        </div>
-
-        <div className="w-1/2 bg-old-book-page p-4 rounded-lg">
-          <h2 className="text-2xl font-semibold mb-4">Next to watch</h2>
-          <ul className="space-y-2">
-            <li className="bg-white p-2 rounded shadow">
-              <BookCard
-                imageSrc="https://via.placeholder.com/150"
-                author="Author Name"
-                bookName="Book Name"
-              />
-            </li>
-            <li className="bg-white p-2 rounded shadow">
-              <BookCard
-                imageSrc="https://via.placeholder.com/150"
-                author="Author Name"
-                bookName="Book Name"
-              />
-            </li>
-            <li className="bg-white p-2 rounded shadow">
-              <BookCard
-                imageSrc="https://via.placeholder.com/150"
-                author="Author Name"
-                bookName="Book Name"
-              />
-            </li>
-          </ul>
-        </div>
+      <div className="container mx-auto p-10">
+        {projectList.map((project, index) => (
+          <div key={index} className="mb-24">
+            <ProjectCard
+              title={project.title}
+              description={project.description}
+              tags={project.tags}
+              link = {project.link}
+            />
+          </div>
+        ))}
       </div>
     </div>
   );

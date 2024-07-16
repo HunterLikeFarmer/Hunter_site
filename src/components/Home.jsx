@@ -44,6 +44,7 @@ const Home = () => {
       <section className="px-10 pt-10 pb-10 bg-old-book-page">
         <div className="container mx-auto flex flex-col items-center justify-center">
           <h2 className="text-4xl font-bold mb-4 hover:scale-110 duration-700">Hi! My name is Hunter Jiang</h2>
+          <hr className="w-full border-t border-gray-400 mb-6" />
           <p className="pt-5 text-lg hover:scale-110 duration-700">
             I'm an undergraduate at <strong><i>University of Illinois Urbana-Champaign</i></strong>.
             I currently major in <strong><i>computer science</i></strong> and minor in <strong><i>comparative
