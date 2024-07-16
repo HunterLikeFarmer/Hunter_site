@@ -22,4 +22,16 @@ html {
   border-radius: 10px;
 }
 
+.notebook-paper {
+  background: linear-gradient(to bottom, white 95%, rgba(0, 0, 0, 0.1) 95%, rgba(0, 0, 0, 0.1) 100%);
+  background-size: 100% 30px; 
+}
+
+.playwrite-cu-main {
+  font-family: "Playwrite CU", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
   
